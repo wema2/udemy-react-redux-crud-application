@@ -7,15 +7,13 @@ import React from 'react';
 const App = () => {
   return (
     <div>
-      <Cat />
-      <Cat />
-      <Cat />
+      <User name={"Taro"} />
     </div>
   )
 }
 
-const Cat = () => {
-  return <div>Meow!</div>
+const User = (props)  => {
+  return <div>Meow! I'm {props.name}</div>
 }
 
 export default App;
